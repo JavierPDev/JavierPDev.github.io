@@ -1,0 +1,5 @@
+gulp styles:bootstrap:uncss
+gulp styles:prefix
+gulp styles:concat
+gulp styles:minify
+gulp js:concat

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+	<title>Portfolio</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.min.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="#home">
+	  <div class="container-fluid">
+	  	<div class="row">
+		    <div class="navbar-header branding col-xs-9 col-sm-3">
+		      <a class="navbar-brand link-to-home" href="#home">
+			      <span class="first-name">Javier</span>
+			      <span class="last-name">Pena</span>
+		      </a>
+		    </div>	
+
+			<!-- Mobile and table -->
+	
+	        <div class="navbar-header">
+	          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse" id="nav-toggle">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+	        <div class="navbar-collapse bs-example-js-navbar-collapse collapse" id="dropdown-menu" style="height: 1px;">
+	          <ul class="nav navbar-nav">
+	          	<li class="dropdown">
+	              <a class="link-to-recent-work" href="#recent-work">Recent Work</a>
+	            </li>
+	            <li class="dropdown">
+	              <a class="link-to-about" href="#about">About</a>
+	            </li>
+	            <li id="fat-menu" class="dropdown">
+	              <a class="link-to-contact" href="#contact">Contact</a>
+	            </li>
+	          </ul>
+	        </div><!-- /.nav-collapse -->
+
+		    <!-- Full -->
+			<div class="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 nav-links visible-sm-block visible-md-block visible-lg-block">
+				<a href="#recent-work" class="nav-link link-to-recent-work">Recent Work</a>
+				<a href="#about" class="nav-link link-to-about">About</a>
+				<a href="#contact" class="nav-link link-to-contact">Contact</a>
+			</div>
+	    </div>
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
+	<section id="home" class="home">
+		<div class="container">
+			<div class="text-center">
+				<h1 class="first-title">Web Developer Extraordinaire</h1>
+				<button id="contact-button" class="btn contact-button link-to-contact">Contact Me <span class="caret"></span></button>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="content">
+		<section class="recent-work" id="recent-work">
+			<div class="text-center">
+				<h2>Recent Work</h2>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4">
+						<div class="work-block">
+							<div class="showcase-img-container">
+								<div class="showcase-img"><img src="assets/timedroplets.png" alt="Time Droplets"><a class="overlay" href="https://timedroplets.com/" target="_blank"></a></div>
+							</div>
+							<div class="description-block">
+								<div class="text-center">
+									<h3>Time Droplets</h3>
+								</div>
+								<p>
+									A web app for time tracking.  Built using the <a href="http://mean.io/">MEAN stack</a> along with some other additions like Elasticsearch for full text search capabilities and socket.io for live syncing between devices and instances of the web app.  Hosted on a virtual private server using nginx as the reverse proxy server and pm2 for nodejs cron job.  Developed using vagrant+virtualbox to simulate the environment it would be deployed to in production.
+								</p>
+								<div class="text-center">
+									<a href="https://timedroplets.com/" class="btn view-project" target="_blank">View Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-sm-offset-2 col-md-4">
+						<div class="work-block">
+							<div class="showcase-img-container">
+								<div class="showcase-img"><img src="assets/quick-dialog-sm.png" class="responsive-img" alt="Angular Quick Dialog"><a class="overlay" href="#" target="_blank"></a></div>
+							</div>
+							<div class="description-block">
+								<div class="text-center">
+									<h3>Angular Quick Dialog</h3>
+								</div>
+								<p>
+									Angularjs plugin designed to be dropped into a project and used easily and quickly with no dependencies other than angularjs. Tested using jasmine and protractor and built with gulpjs.  Also distributed through the bower package manager.
+								</p>
+								<div class="text-center">
+									<a href="#" class="btn view-project" target="_blank">View Project</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="about" class="about">
+			<div class="text-center">
+				<h2>About Me</h2>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 col-sm-offset-3">
+						<div class="text-center">
+							<img class="javier-photo img-circle" src="assets/javier-sepia.jpg" alt="Photo of Javier Pena">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<p>
+							Hi, I'm Javier, a twenty-something year old web developer with a knack for learning new technologies and having a mastery of current ones, but that's just a means to an end.  My purpose and passion is creating by building projects that serve the user and meet their needs without skimping on their wants.
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="text-center">
+						<h3>My Toolbox</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<ul class="col-xs-12 col-sm-4 col-sm-offset-3">
+						<li>(Responsive) HTML5, CSS3, and SASS with Bourbon</li>
+						<li>javascript</li>
+						<li>angularjs</li>
+						<li>jquery</li>
+						<li>nodejs</li>
+						<li>expressjs</li>
+						<li>mongodb</li>
+						<li>socket.io</li>
+						<li>Elasticsearch</li>
+						<li>jasmine unit testing suite</li>
+						<li>protractor end-to-end testing suite</li>
+						<li>bootstrap</li>
+						<li>gulpjs build tools</li>
+					</ul>
+
+					<ul class="col-xs-12 col-sm-4">
+						<li>git</li>
+						<li>bitbucket and github</li>
+						<li>ssh (and the terminal in general)</li>
+						<li>vagrant and virtualbox</li>
+						<li>nginx</li>
+						<li>tmux</li>
+						<li>Adobe Fireworks</li>
+						<li>vim (work gets done so much faster)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="contact" class="contact">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-sm-offset-2">
+						<div class="panel panel-default">
+							<div class="panel-heading"><h4>From Chicago</h4></div>
+							<img src="assets/chicago-sm.png" class="responsive-img chicago-map" alt="Chicago map">
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+						<div class="panel panel-default contact-panel">
+							<div class="panel-heading"><h4>Contact Me</h4></div>
+								<div class="panel-body">
+                                    <a href="mailto:javier@javierdev.com" target="_blank">
+                                        <p><img class="contact-icon" src="assets/email.png" alt="Email icon">Email me</p>
+                                        </a>
+                                    <a href="https://github.com/JavierPDev" target="_blank">
+                                        <p><img class="contact-icon" src="assets/Octocat.png" alt="Github icon">Find me on github</p>
+                                    </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<script src="main.min.js"></script>
+</body>
+</html>
