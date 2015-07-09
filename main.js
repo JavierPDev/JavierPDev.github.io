@@ -78,17 +78,14 @@
             if (offsetFromTop >= positions.work && offsetFromTop < positions.about) {
                 links.nav.removeClass('active-link');
                 links.work.addClass('active-link');
-                console.log('in work section');
             }
             if (offsetFromTop >= positions.about && offsetFromTop <= positions.about + aboutHeight * .66) {
                 links.nav.removeClass('active-link');
                 links.about.addClass('active-link');
-                console.log('in about section');
             }
             if (offsetFromTop >= positions.about + aboutHeight * .66) {
                 links.nav.removeClass('active-link');
                 links.contact.addClass('active-link');
-                console.log('in contact section');
             }	    
         });
 
