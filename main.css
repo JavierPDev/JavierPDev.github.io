@@ -149,9 +149,7 @@ a.active-link {
 	letter-spacing: 1px;
 	margin-top: 10px;
 
-	-webkit-transition: all .4s;
-
-	        transition: all .4s;
+	transition: all .4s;
 }
 .contact-button:hover {
 	background: #38301D;
@@ -229,15 +227,19 @@ a.active-link {
 	width: 100%;
 	height: 100%;
 
-	-webkit-transition: all .3s;
-
-	        transition: all .3s;
+	transition: all .3s;
 }
 .overlay:hover { background: rgba(0,0,0,.5); }
 
 .showcase, .overlay {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+}
+
+.play-store {
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 
