@@ -76,6 +76,7 @@ a.active-link {
 	.home {
 		background-image: url('assets/bg-xl.jpg');
 		background-position: center center;
+    background-size: cover;
 		background-color: #2C2626;
 	}
 
