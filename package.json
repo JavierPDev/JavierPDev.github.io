@@ -5,17 +5,26 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "",
+    "build": "gulp build.css && gulp build.html && gulp build.js && gulp build.img && gulp build.favicon"
   },
   "author": "Javier Pena",
   "license": "MIT",
   "devDependencies": {
-    "concat": "^1.0.0",
-    "gulp": "^3.8.7",
-    "gulp-autoprefixer": "0.0.8",
-    "gulp-concat": "^2.3.4",
-    "gulp-concat-css": "^0.1.4",
-    "gulp-minify-css": "^0.3.7",
-    "gulp-uncss": "^0.4.5"
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-copy": "0.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-css": "latest",
+    "gulp-strip-line": "0.0.1",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "jquery-visible": "git+https://github.com/customd/jquery-visible.git"
   }
 }
