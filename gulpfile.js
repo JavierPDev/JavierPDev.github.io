@@ -11,7 +11,6 @@ var browserSync = require('browser-sync').create();
 
 var paths = {
   css: {
-    bootstrap: './node_modules/bootstrap/dist/css/bootstrap.min.css',
     main: './main.css'
   },
   favicon: [
@@ -34,7 +33,6 @@ var paths = {
 
 gulp.task('build.css', function() {
   var srcPaths = [
-    paths.css.bootstrap,
     paths.css.main
   ];
 
