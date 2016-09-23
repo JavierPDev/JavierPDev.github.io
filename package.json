@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "",
-    "build": "gulp build.css && gulp build.html && gulp build.js && gulp build.img && gulp build.favicon"
+    "build": "gulp build.css && gulp build.html && gulp build.js && gulp build.img && gulp build.favicon",
+    "sync": "gulp sync"
   },
   "author": "Javier Pena",
   "license": "MIT",
