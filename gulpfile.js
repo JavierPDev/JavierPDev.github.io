@@ -30,12 +30,22 @@ gulp.task('build', function(done) {
   runSequence(
     'clean',
     ['build.css', 'build.html', 'build.js', 'build.img', 'copy.favicon'],
+    'run.build.server',
     done
   );
 })
 
 gulp.task('clean', function(done) {
   exec('rm -rf ./dist', done);
+});
+
+gulp.task('run.build.server', function(done) {
+  exec('./node_modules/http-server/bin/http-server ./dist', function(err, stdout, stderr) {
+    process.stdout.write('err', err);
+    process.stdout.write('stdout', stdout);
+    process.stdout.write('stderr', stderr);
+    done();
+  });
 });
 
 gulp.task('build.css', function() {
