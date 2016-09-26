@@ -1,12 +1,7 @@
+var exec = require('child_process').exec;
 var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var cssmin = require('gulp-minify-css');
-var concatJs = require('gulp-concat');
-var concatCss = require('gulp-concat-css');
-var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
-var copy = require('gulp-copy');
-var stripLine = require('gulp-strip-line');
+var plugins = require('gulp-load-plugins')();
+var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 var paths = {
@@ -31,15 +26,27 @@ var paths = {
   }
 };
 
+gulp.task('build', function(done) {
+  runSequence(
+    'clean',
+    ['build.css', 'build.html', 'build.js', 'build.img', 'copy.favicon'],
+    done
+  );
+})
+
+gulp.task('clean', function(done) {
+  exec('rm -rf ./dist', done);
+});
+
 gulp.task('build.css', function() {
   var srcPaths = [
     paths.css.main
   ];
 
-  gulp.src(srcPaths)
-    .pipe(autoprefixer())
-    .pipe(concatCss('main.css'))
-    .pipe(cssmin())
+  return gulp.src(srcPaths)
+    .pipe(plugins.autoprefixer())
+    .pipe(plugins.concatCss('main.css'))
+    .pipe(plugins.minifyCss())
     .pipe(gulp.dest('./dist'));
 });
 
@@ -49,21 +56,22 @@ gulp.task('build.html', function() {
   ];
   var linesToStrip = ['node_modules'];
 
-  gulp.src(srcPaths)
-    .pipe(stripLine(linesToStrip))
-    .pipe(htmlmin({collapseWhitespace: true}))
+  return gulp.src(srcPaths)
+    .pipe(plugins.stripLine(linesToStrip))
+    .pipe(plugins.htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./dist'));
 });
 
 
 gulp.task('build.img', function() {
-  gulp.src(paths.img)
-    .pipe(copy('./dist'))
+  return gulp.src(paths.img)
+    .pipe(plugins.imagemin())
+    .pipe(gulp.dest('./dist/assets'));
 });
 
-gulp.task('build.favicon', function() {
-  gulp.src(paths.favicon)
-    .pipe(copy('./dist'))
+gulp.task('copy.favicon', function() {
+  return gulp.src(paths.favicon)
+    .pipe(plugins.copy('./dist'));
 });
 
 gulp.task('build.js', function() {
@@ -73,9 +81,10 @@ gulp.task('build.js', function() {
     paths.js.bootstrap,
     paths.js.main
   ];
-  gulp.src(srcPaths)
-    .pipe(uglify())
-    .pipe(concatJs('main.js'))
+
+  return gulp.src(srcPaths)
+    .pipe(plugins.uglify())
+    .pipe(plugins.concat('main.js'))
     .pipe(gulp.dest('./dist'));
 });
 
