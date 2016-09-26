@@ -10,9 +10,9 @@ a.active-link {
 }
 
 
-/*==========*/
-/*Home Page*/
-/*==========*/
+/*====*/
+/*Home*/
+/*====*/
 .home {
 	max-width: 100%;
 	width: 100%;
@@ -167,11 +167,9 @@ a.active-link {
 }
 
 
-
-
-/*================*/
-/*Recent Work Page*/
-/*================*/
+/*===========*/
+/*Recent Work*/
+/*===========*/
 .recent-work {
 	background: #fff;
 	padding: 50px 0;
@@ -244,10 +242,9 @@ a.active-link {
 }
 
 
-
-/*==========*/
-/*About Page*/
-/*==========*/
+/*=====*/
+/*About*/
+/*=====*/
 .about {
 	background: #f8f8f8;
 	padding: 50px 0;
@@ -266,10 +263,9 @@ a.active-link {
 }
 
 
-
-/*============*/
-/*Contact Page*/
-/*============*/
+/*=======*/
+/*Contact*/
+/*=======*/
 .contact {
 	/*Original background by Atle Mo at http://subtlepatterns.com/little-pluses/.  Modified to be darker brown*/
 	background-image: url('assets/little_pluses_brown.png');
@@ -285,4 +281,13 @@ a.active-link {
 
 @media screen and (max-width: 767px) {
 	.contact-pannel { margin-top: 40px; }	
+}
+
+
+/*=======*/
+/*Carousel*/
+/*=======*/
+.item.active {
+  cursor: zoom-in;
+  display: block;
 }

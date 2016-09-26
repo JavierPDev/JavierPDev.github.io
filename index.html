@@ -524,8 +524,14 @@
 	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<script src="main.js"></script>
   <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
+    // Activate tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Clicking on carousel images opens them in new tab/window.
+    // Needed since changing .item to <a> with block display messes up carousel
+    $('.item').on('click', function() {
+      var imgUrl = this.children[0].src;
+      window.open(imgUrl);
     });
   </script>
 </body>
