@@ -1,2 +1,2 @@
-JavierPDev.github.io
+javierdev.com
 ====================
