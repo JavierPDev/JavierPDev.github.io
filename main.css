@@ -308,19 +308,42 @@ a.active-link {
   margin-top: 0;
 }
 
+.about .tech-expertise {
+  margin-top: 50px;
+}
+
 .about p {
   font-size: 1.2em;
   line-height: 1.2em;
   padding-top: 20px 0;
 }
 
+.about ul {
+  padding-left: 25px;
+}
+
 .about li {
 	list-style-type: square;
+}
+
+.about-icon {
+  height: 24px;
+  margin-top: -7px;
 }
 
 @media screen and (max-width: 767px) {
 	.about ul {
     padding-left: 30px;
+  }
+
+  .javier-photo {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .javier-photo {
+    margin-top: -50px;
   }
 }
 
