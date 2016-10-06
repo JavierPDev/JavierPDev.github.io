@@ -230,6 +230,10 @@ a.active-link {
 	color: white;
 }
 
+.view-project:focus {
+  color: white;
+}
+
 .description-block {
 	background: #fdfdfd;
 	border-bottom-left-radius: 5px;
@@ -279,6 +283,10 @@ a.active-link {
   float: right;
   margin-top: 10px;
   margin-right: 25px;
+}
+
+.github-icon {
+  height: 15px;
 }
 
 
