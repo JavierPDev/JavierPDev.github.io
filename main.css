@@ -222,6 +222,7 @@ a.active-link {
 .view-project {
 	background: #2A2424;
 	color: white;
+  margin-left: 3px;
 	margin-top: 15px;
 }
 
