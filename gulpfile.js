@@ -101,7 +101,7 @@ gulp.task('build.js', function() {
 gulp.task('sync', function() {
   browserSync.init({
     server: {
-    baseDir: './'
+      baseDir: './'
     },
     open: false
   });
