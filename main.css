@@ -353,6 +353,7 @@ a.active-link {
 /*Contact*/
 /*=======*/
 .contact {
+  background-color: #5e564d;
 	/*Original background by Atle Mo at http://subtlepatterns.com/little-pluses/.  Modified to be darker brown*/
 	background-image: url('assets/little_pluses_brown.png');
 	padding: 50px 0;
