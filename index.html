@@ -89,7 +89,7 @@
                   <img src="assets/thumbnail-loveanimals-1.jpg" alt="LoveAnimals.org">
                   <div data-toggle="modal" 
                     data-target=".modal-loveanimals"
-                    class="overlay">
+                    class="overlay modal-opener">
                   </div>
                 </div>
 							</div>
@@ -119,7 +119,7 @@
                   <img src="assets/thumbnail-sounderradio-1.jpg" alt="Sounder Radio">
                   <div data-toggle="modal"
                     data-target=".modal-sounderradio"
-                    class="overlay">
+                    class="overlay modal-opener">
                   </div>
                 </div>
 							</div>
@@ -157,7 +157,7 @@
                   <div data-toggle="modal"
                     data-target=".modal-sss"
                     title="View more images"
-                    class="overlay">
+                    class="overlay modal-opener">
                   </div>
                 </div>
 							</div>
@@ -184,7 +184,7 @@
 							<div class="showcase-img-container">
 								<div class="showcase-img">
                   <img src="assets/thumbnail-meanstackjs.jpg" alt="Mean Stack JS">
-                  <a class="overlay" href="http://meanstackjs.com/" target="_blank">
+                  <a class="overlay modal-opener" href="http://meanstackjs.com/" target="_blank">
                   </a>
                 </div>
 							</div>
@@ -221,7 +221,7 @@
                   <img src="assets/spaced.png" alt="Spaced App">
                   <div data-toggle="modal"
                     data-target=".modal-spaced"
-                    class="overlay">
+                    class="overlay modal-opener">
                   </div>
                 </div>
 							</div>
@@ -256,7 +256,7 @@
 							<div class="showcase-img-container">
 								<div class="showcase-img">
                   <img src="assets/audiotime.png" alt="Audio Time">
-                  <a class="overlay" href="https://github.com/JavierPDev/AudioTime" target="_blank">
+                  <a class="overlay modal-opener" href="https://github.com/JavierPDev/AudioTime" target="_blank">
                   </a>
                 </div>
 							</div>
@@ -294,7 +294,7 @@
 							<div class="showcase-img-container">
 								<div class="showcase-img">
                   <img src="assets/weather-history.jpg" alt="Weather History">
-                  <a class="overlay" href="https://github.com/JavierPDev/Weather-History" target="_blank">
+                  <a class="overlay modal-opener" href="https://github.com/JavierPDev/Weather-History" target="_blank">
                   </a>
                 </div>
 							</div>
@@ -325,7 +325,7 @@
 							<div class="showcase-img-container">
 								<div class="showcase-img">
                   <img src="assets/timedroplets.jpg" alt="Time Droplets">
-                  <a class="overlay" href="https://timedroplets.com/" target="_blank">
+                  <a class="overlay modal-opener" href="https://timedroplets.com/" target="_blank">
                   </a>
                 </div>
 							</div>
@@ -350,7 +350,7 @@
 							<div class="showcase-img-container">
 								<div class="showcase-img">
                   <img src="assets/quick-dialog-sm.png" class="responsive-img" alt="Angular Quick Dialog">
-                  <a class="overlay" href="https://github.com/JavierPDev/angular-quick-dialog" target="_blank">
+                  <a class="overlay modal-opener" href="https://github.com/JavierPDev/angular-quick-dialog" target="_blank">
                   </a>
                 </div>
 							</div>
@@ -489,7 +489,7 @@
 	<div class="modal fade modal-loveanimals" tabindex="-1" role="dialog" aria-labelledby="largeModal">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div id="carousel-loveanimals" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div id="carousel-loveanimals" class="carousel slide lazy" data-ride="carousel" data-interval="false">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#carousel-loveanimals" data-slide-to="0" class="active"></li>
@@ -501,25 +501,25 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="/assets/loveanimals-1.jpg" alt="LoveAnimals.org Image">
+							<img data-src="/assets/loveanimals-1.jpg" alt="LoveAnimals.org Image">
 							<div class="carousel-caption">
 								Homepage
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/loveanimals-2.jpg" alt="LoveAnimals.org Image">
+							<img data-src="/assets/loveanimals-2.jpg" alt="LoveAnimals.org Image">
 							<div class="carousel-caption">
 								(Funded) Campaigns Listing
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/loveanimals-3.jpg" alt="LoveAnimals.org Image">
+							<img data-src="/assets/loveanimals-3.jpg" alt="LoveAnimals.org Image">
 							<div class="carousel-caption">
                 Funded Campaign
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/loveanimals-4.jpg" alt="LoveAnimals.org Image">
+							<img data-src="/assets/loveanimals-4.jpg" alt="LoveAnimals.org Image">
 							<div class="carousel-caption">
 								Active Campaign
 							</div>
@@ -556,37 +556,37 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="/assets/spaced-1.png" alt="Spaced App">
+							<img data-src="/assets/spaced-1.png" alt="Spaced App">
 							<div class="carousel-caption">
 								Events View
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/spaced-2.png" alt="Spaced App">
+							<img data-src="/assets/spaced-2.png" alt="Spaced App">
 							<div class="carousel-caption">
 								Event View
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/spaced-3.png" alt="Spaced App">
+							<img data-src="/assets/spaced-3.png" alt="Spaced App">
 							<div class="carousel-caption">
 								Reminders View
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/spaced-4.png" alt="Spaced App">
+							<img data-src="/assets/spaced-4.png" alt="Spaced App">
 							<div class="carousel-caption">
 								Datepicker
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/spaced-5.png" alt="Spaced App">
+							<img data-src="/assets/spaced-5.png" alt="Spaced App">
 							<div class="carousel-caption">
 								Navigation
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/spaced-6.png" alt="Spaced App">
+							<img data-src="/assets/spaced-6.png" alt="Spaced App">
 							<div class="carousel-caption">
 								No items
 							</div>
@@ -622,31 +622,31 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="/assets/sounderradio-1.jpg" alt="Sounder Radio Image">
+							<img data-src="/assets/sounderradio-1.jpg" alt="Sounder Radio Image">
 							<div class="carousel-caption">
 								Main Player
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sounderradio-2.jpg" alt="Sounder Radio Image">
+							<img data-src="/assets/sounderradio-2.jpg" alt="Sounder Radio Image">
 							<div class="carousel-caption">
 								Alternate SoundCloud Player
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sounderradio-3.jpg" alt="Sounder Radio Image">
+							<img data-src="/assets/sounderradio-3.jpg" alt="Sounder Radio Image">
 							<div class="carousel-caption">
 								Search Page
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sounderradio-4.jpg" alt="Sounder Radio Image">
+							<img data-src="/assets/sounderradio-4.jpg" alt="Sounder Radio Image">
 							<div class="carousel-caption">
 								History
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sounderradio-5.jpg" alt="Sounder Radio Image">
+							<img data-src="/assets/sounderradio-5.jpg" alt="Sounder Radio Image">
 							<div class="carousel-caption">
 								Favorites
 							</div>
@@ -682,31 +682,31 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="/assets/sss-2.jpg" alt="SteveSpanglerScience Image">
+							<img data-src="/assets/sss-2.jpg" alt="SteveSpanglerScience Image">
 							<div class="carousel-caption">
 								Video Home
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sss-1.jpg" alt="SteveSpanglerScience Image">
+							<img data-src="/assets/sss-1.jpg" alt="SteveSpanglerScience Image">
 							<div class="carousel-caption">
 								Experiments Page (Note cut off elements is result of full-page screenshot)
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sss-3.jpg" alt="SteveSpanglerScience Image">
+							<img data-src="/assets/sss-3.jpg" alt="SteveSpanglerScience Image">
 							<div class="carousel-caption">
 								Video Page
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sss-4.jpg" alt="SteveSpanglerScience Image">
+							<img data-src="/assets/sss-4.jpg" alt="SteveSpanglerScience Image">
 							<div class="carousel-caption">
 								Video Page with video description
 							</div>
 						</div>
 						<div class="item">
-							<img src="/assets/sss-5.jpg" alt="SteveSpanglerScience Image">
+							<img data-src="/assets/sss-5.jpg" alt="SteveSpanglerScience Image">
 							<div class="carousel-caption">
 								Menu
 							</div>
@@ -734,6 +734,15 @@
   <script>
     // Activate tooltips
     $('[data-toggle="tooltip"]').tooltip();
+
+		// Lazyload carousel images when modal is opened
+    $('.modal-opener').on('click', function(e) {
+			var targetModal = $(e.target.dataset.target);
+			var lazy = targetModal.find("img[data-src]").each(function(index, val) {
+				$(val).attr("src", $(val).data('src'));
+				$(val).removeAttr("data-src");
+			});
+    });
 
     // Clicking on carousel images opens them in new tab/window.
     // Needed since changing .item to <a> with block display messes up carousel
