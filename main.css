@@ -389,3 +389,7 @@ a.active-link {
   cursor: zoom-in;
   display: block;
 }
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img {
+  width: 100%;
+}
